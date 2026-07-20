@@ -1,7 +1,15 @@
 #Quation No 1
-city =["Addis Abbeba","Adama", 'Disse','Hawassa', "Addis Abbeba", "Disse"]
+#city =["Addis Abbeba","Adama", 'Disse','Hawassa', "Addis Abbeba", "Disse"]
 
-print(set(city))
+#print(set(city))
+
+
+#Quation N2
+grocery ={"Onion": 100, "Potato":30, "Avocado": 150, "Mango":220, "Appel": 850}
+
+for item, price in grocery. items() :
+    print(f"{item}:{price} ETB")
+
 
 
 

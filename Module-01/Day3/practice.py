@@ -12,14 +12,18 @@
 
 
 #Quation N3
-price = [100, 250, 400, 80]
+#price = [100, 250, 400, 80]
 
-with_tax = [price +(price * 0.15) for price in price]
-print(with_tax)
+#with_tax = [price +(price * 0.15) for price in price]
+#print(with_tax)
 
 
 
 #Quation No4
+prices =[100, 250, 400, 80]
+low_price =[price for price in prices if price < 200]
+print(low_price)
+
 
 
 

@@ -27,17 +27,25 @@
 
 #Quation No5
 
-with open("names.txt", "w") as file:
-    file.write("Kidist\n")
-    file.write("Ayalew\n")
-    file.write("Hasset\n")
+# with open("names.txt", "w") as file:
+#     file.write("Kidist\n")
+#     file.write("Ayalew\n")
+#     file.write("Hasset\n")
      
-with open ("names.txt","r")as file:
-    for line in file:
-         print(line.strip())
+# with open ("names.txt","r")as file:
+#     for line in file:
+#          print(line.strip())
     
+#Quation N0 6
+try:
+    amount =int(input("Enter anumber:"))
+    result =1000/amount
+    print("Result:",result)
 
-      
+except ValueError:
+    print("Error: pleas enter a valid non-zero number.")
+
+ 
 
 
 # #quation No 3

@@ -20,14 +20,24 @@
 
 
 #Quation No4
-prices =[100, 250, 400, 80]
-low_price =[price for price in prices if price < 200]
-print(low_price)
+#prices =[100, 250, 400, 80]
+#low_price =[price for price in prices if price < 200]
+#print(low_price)
 
 
+#Quation No5
 
+with open("names.txt", "w") as file:
+    file.write("Kidist\n")
+    file.write("Ayalew\n")
+    file.write("Hasset\n")
+     
+with open ("names.txt","r")as file:
+    for line in file:
+         print(line.strip())
+    
 
-
+      
 
 
 # #quation No 3

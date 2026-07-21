@@ -1,7 +1,9 @@
-tempr =int(input("Enter a temprature in (°C"))
-if tempr<15:
+# quation No 1
+temp = float(input("Enter a temperature in °C: "))
+
+if temp < 15:
     print("cold")
-elif tempr<28:
-   print("warm") 
+elif 15 <= temp <= 28:
+    print("warm")
 else:
-    print("hot")    
+    print("hot")

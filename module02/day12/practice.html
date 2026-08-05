@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethio Telecom Registration</title>
+</head>
+<body>
+    <h1>Ethio Telecom Registration</h1>
+    <form action="/register"method="post">
+  
+    <label for="fullname">Full Name</label>
+    <input id="fullname"name="fullname" type="text"required>
+    <label for="tel">Phone</label>
+    <input id="tel"name="tel" type="tel"
+        pattern="\+251[0-9]{9}"required
+        aria-describedby="tel-help">
+    <p id="tel-help">Format:+251 followed by 9 digits.</p>   
+    <label for ="email">Email:</label>
+    <input id="email"name="email"type=email required>  
+    <label for="branch">Branch</label>
+    <select
+        id="branch"
+        name="branch"
+        required
+
+        <option  value="">Choose a branch</option>
+        <option value="Bole">Bole</option>
+        <option value="Kazanchis">Kazanchis</option>
+        <option value="Piassa">Piassa</option>
+    </select> 
+    <button type="submit">Register</button>   
+</form>
+</body>
+</html>

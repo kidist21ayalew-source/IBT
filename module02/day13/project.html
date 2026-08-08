@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Profile card</title>
+    <style>
+        :root{
+            --primary-color: #2C1810;
+            --secondary-color: #D4A847;
+            --background: #FFF8F0;
+            --spacing-small:0.5rem;
+            --spacing-medium:1rem;
+            --spacing-large:2rem;
+        }
+
+        * 
+        {box-sizing:border-box;
+
+        }
+        body{
+            font-family: Arial,sans-serif;
+            background: #F5EDE0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .business-card{
+            background: var(--background);
+            padding:var(--spacing-large);
+            border: 2px solid var(--secondary-color);
+            border-radius:16px;max-width: 450px;width: 100%;
+            box-shadow:0 8px 32px rgba(0, 0, 0, 1) ;
+        }  
+        .business-name{
+            font-size: 2.2rem;
+            font-weight: 900;
+            color:var(--primary-color);
+            text-align: center;
+            margin-bottom: 0.25rem;
+        }    
+
+
+        .tagline{
+            font-size: 1.2rem;
+            font-style: italic;
+            color:var(--secondary-color);
+            text-align:center;
+        }
+    
+        .detail{
+            font-size: 1rem;
+            line-height: 1.8;
+            color: var(--primary-color);
+            margin-bottom:0.5rem;
+            padding-left: 0.5rem;
+        }
+        .contact-btn {
+            background: hsl(35, 80%, 50%);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s ease;
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+        .contact-btn:hover {
+           background: hsl(35, 80%, 40%);  /* Darker gold */
+            transform: scale(1.02);
+
+        }
+        .business-name::before {
+            content: "✦";
+            color: var(--secondary-color);
+        }
+    
+    </style>
+</head>
+<body>
+
+    <div class="business-card">
+        <h1 class="business-name">Bole Coffee House</h1>
+        <p class="tagline">"where Every Cup Tells a Story"</p>
+        <p class="Location">Bole Medhanealem Road</p>
+        <p class="detail">+251912926512</p>
+        <p class="detail">8:00AM-8:00pm</p>
+        <button class="contact-btn">Contact Us</button>
+
+    </div>    
+</body>
+</html>

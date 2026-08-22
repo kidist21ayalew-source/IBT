@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addis Eats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Addis Eats</h1>
+        <label for="search">Search dishes</label>
+        <input
+            type="search"
+            id="search"
+            placeholder="Search dishes..."
+            >
+        </header>    
+        <main>
+            <section id="menu" aria-label="Menu">
+                <h2>Our Menu</h2>
+                <div id="categoryButtons">
+                    <button data-category="All">All</button>
+                    <button data-category="Main">main</button>
+                    <button data-category="Vegetarian">Vegetarian</button>
+                    <button data-category="Breakfast">Breakfast</button>
+                </div>
+                <div id="menuList">
+                    
+                </div>
+            </section> 
+            <aside id="cart" aria-label="Your order">
+                <h2>Your Cart</h2>
+                <div id="cartItems"></div>
+
+                <p>
+                    Total:
+                    <strong id="cartTotal">0 ETB</strong>
+                </p>
+                <button id="clearCart">Clear Cart</button>
+            </aside>        
+        </main>
+
+    <footer>
+        <div class="footer-info">
+            <h3>Addis Eats</h3>
+            <p>📍 Bole,Addis Ababa</p>
+            <p>💳 payment:TeleBirr</p>
+        </div>
+        
+        <p class="copyright">
+            @2018 Addis Eats.All Rights reserved.
+        </p>
+    </footer>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
